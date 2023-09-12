@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Questions and Answers</title>
+</head>
+<body>
+    <h2>List of Questions</h2>
+    <!-- <%=  %> -> show variables from node -->
+
+    <%= name %>
+    <%= Language %>
+    <%= Company %>
+    <p><%= subscribe %></p>
+
+    <% if(msg){ %>
+        <h3>this is a error message</h3>
+    <% }else{ %>
+        <h3>no error</h3>
+    <%}%>
+
+    <% products.forEach(function(produto){%>
+        <%= produto.name%>
+        <%= produto.price%><br>
+
+    <%})%>
+</body>
+</html>

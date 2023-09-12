@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs')%>
+<%- include('partials/navbar.ejs')%> 
+
+<body>
+    <div class="container">
+        <div id="form" class="card">
+            <div class="card-header">
+                <h3>Create question</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/save">
+                    <label>Title:</label>
+                    <input  type="text" placeholder="Enter a Title" class="form-control" name="title"/>
+                    <label>Describe:</label>
+                    <textarea name="describe" rows="7"  type="text" style="resize: none" placeholder="Describe the Question"  class="form-control"></textarea>
+                    <br/>
+                    <button  class="btn btn-outline-primary btn-block" >Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include("partials/footer.ejs")%>
